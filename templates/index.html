@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+    <title>PiCam Server</title>
+    <style>
+    body{
+	background-color:#70706F;
+	}
+
+	h1{
+	    color:#3AAA35;
+	    text-align:center;
+	}
+
+
+	.img-container{
+	      width:50%;
+	    border: 3px solid #3AAA35;
+	    border-radius: 6px;
+	    overflow: hidden; 
+	    text-align:center;
+	    margin-left: auto;
+	    margin-right: auto;
+	    padding:20px;
+	}
+	img{
+	  width:100%;
+	}
+	footer{
+	  background-color: #777;
+	  padding: 10px;
+	  text-align: center;
+	  color: white;
+	}
+   </style>
+
+</head>
+
+<body>
+    
+        <h1>PiCam Live Streaming</h1>
+        
+        <div class="img-container">
+            <img src="{{ url_for('video_feed') }}">
+        </div>
+       
+        
+</body>
+
+</html>
