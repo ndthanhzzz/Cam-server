@@ -31,13 +31,13 @@
         <div class="sidebar">
             <ul class="sidebar--items">
                 <li>
-                    <a href="{{ url_for('index') }}" id="active--link">
+                    <a href="{{ url_for('index') }}" >
                         <span class="icon icon-1"><i class="ri-home-9-fill"></i></span>
                         <span class="sidebar--item">Live Camera</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url_for('face_detection_page') }}">
+                    <a href="{{ url_for('face_detection_page') }}" id="active--link">
                         <span class="icon icon-2"><i class="ri-calendar-2-line"></i></span>
                         <span class="sidebar--item">Detection Camera</span>
                     </a>
@@ -84,12 +84,8 @@
         </div>
         <div class="main--content">
             <div class="img-container">
-                <img src="{{ url_for('filtered_feed') }}" width="640" height="480">
+                <img src="{{ url_for('face_detection_feed') }}" width="640" height="480">
             </div>
-            </br>
-            <button onclick="applyFilter('grayscale')">Grayscale</button>
-            <button onclick="applyFilter('blur')">Blur</button>
-            <button onclick="applyFilter(null)">Original</button>
         </div>
     </section>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
