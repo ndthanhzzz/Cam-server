@@ -37,13 +37,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url_for('face_detection_page') }}" id="active--link">
+                    <a href="{{ url_for('face_detection_page') }}">
                         <span class="icon icon-2"><i class="ri-emotion-line"></i></span>
                         <span class="sidebar--item">Detection Camera</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url_for('finger_count_page') }}">
+                    <a href="{{ url_for('finger_count_page') }}" id="active--link">
                         <span class="icon icon-3"><i class="ri-calculator-line"></i></span>
                         <span class="sidebar--item" style="white-space: nowrap;">Finger Count Camera</span>
                     </a>
@@ -84,7 +84,21 @@
         </div>
         <div class="main--content">
             <div class="img-container">
-                <img src="{{ url_for('face_detection_feed') }}" width="640" height="480">
+                <img src="/finger_count_feed" id="finger_count_feed" width="640" height="480">
+            </div>
+            <div class="finger-display">
+                <div class="hand-info right-hand">
+                    <div class="hand-label">Tay Phải</div>
+                    <div class="finger-count" id="right_finger_count">0</div>
+                </div>
+                <div class="hand-info left-hand">
+                    <div class="hand-label">Tay Trái</div>
+                    <div class="finger-count" id="left_finger_count">0</div>
+                </div>
+                <div>
+                    <button id="start_counting">Bật đếm ngón tay</button>
+                    <button id="stop_counting">Tắt đếm ngón tay</button>
+                </div>
             </div>
         </div>
     </section>

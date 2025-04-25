@@ -22,7 +22,7 @@
             </div>
             <div class="notification--profile">
                 <div class="picon profile">
-                    <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Image">
+                    <img src="{{ url_for('static', filename='images/Computer Man.jpg') }}" alt="Profile Image">
                 </div>
             </div>
         </div>
@@ -32,25 +32,25 @@
             <ul class="sidebar--items">
                 <li>
                     <a href="{{ url_for('index') }}" id="active--link">
-                        <span class="icon icon-1"><i class="ri-home-9-fill"></i></span>
+                        <span class="icon icon-1"><i class="ri-home-fill"></i></i></span>
                         <span class="sidebar--item">Live Camera</span>
                     </a>
                 </li>
                 <li>
                     <a href="{{ url_for('face_detection_page') }}">
-                        <span class="icon icon-2"><i class="ri-calendar-2-line"></i></span>
+                        <span class="icon icon-2"><i class="ri-emotion-line"></i></span>
                         <span class="sidebar--item">Detection Camera</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <span class="icon icon-3"><i class="ri-user-2-line"></i></span>
+                    <a href="{{ url_for('finger_count_page') }}">
+                        <span class="icon icon-3"><i class="ri-calculator-line"></i></span>
                         <span class="sidebar--item" style="white-space: nowrap;">Finger Count Camera</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <span class="icon icon-4"><i class="ri-user-line"></i></span>
+                        <span class="icon icon-4"><i class="ri-computer-line"></i></span>
                         <span class="sidebar--item">Train Camera</span>
                     </a>
                 </li>
@@ -62,7 +62,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        <span class="icon icon-6"><i class="ri-customer-service-line"></i></span>
+                        <span class="icon icon-6"><i class="ri-tools-fill"></i></span>
                         <span class="sidebar--item">Orther Tools</span>
                     </a>
                 </li>
@@ -75,7 +75,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="{{ url_for('logout') }}">
                         <span class="icon icon-8"><i class="ri-logout-box-r-line"></i></span>
                         <span class="sidebar--item">Logout</span>
                     </a>
@@ -93,6 +93,6 @@
         </div>
     </section>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
-</body>
+</body> 
 
 </html>

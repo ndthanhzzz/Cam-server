@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>404 Not Found</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 3em;
+            color: #d32f2f;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2em;
+            color: #777;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #1976d2;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <p>Rất tiếc, trang bạn đang tìm kiếm không tồn tại.</p>
+        <p>Bạn có thể quay lại <a href="{{ url_for('index') }}">trang chủ</a>.</p>
+    </div>
+</body>
+</html>
